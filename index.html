@@ -47,54 +47,56 @@
     </header>
     <main>
       <!-- Функция заказа услуги -->
-      <section class="hero">
+      <section class="container hero">
         <h1 class="hero-title">эффективные решения <br />для вашего бизнеса</h1>
         <a href="" class="hero-button">Заказать услугу</a>
       </section>
       <!-- Преимущества -->
-      <section class="benefits">
+      <section class="container benefits">
         <h2 class="benefits-title">Преимущества</h2>
-        <ul>
-          <li>
-            <div>
-              <img src="./images/logo/antenna.svg" alt="Логотип антенна" />
-            </div>
-            <h3 class="benefits-item">Внимание к деталям</h3>
-            <p class="benefits-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <img src="./images/logo/clock.svg" alt="Логотип часы" />
-            <h3 class="benefits-item">Пунктуальность</h3>
-            <p class="benefits-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <img src="./images/logo/diagram.svg" alt="Логотип диаграмма" />
-            <h3 class="benefits-item">Планирование</h3>
-            <p class="benefits-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <img src="./images/logo/astronaut.svg" alt="Логотип Астронавт" />
-            <h3 class="benefits-item">Современные технологии</h3>
-            <p class="benefits-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+          <ul class="list">
+            <div class="benefits-flex">
+            <li class="benefits-item">
+              <div>
+                <img src="./images/logo/antenna.svg" alt="Логотип антенна" />
+              </div>
+              <h3 class="benefits-subtitle">Внимание к деталям</h3>
+              <p class="benefits-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./images/logo/clock.svg" alt="Логотип часы" />
+              <h3 class="benefits-subtitle">Пунктуальность</h3>
+              <p class="benefits-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./images/logo/diagram.svg" alt="Логотип диаграмма" />
+              <h3 class="benefits-subtitle">Планирование</h3>
+              <p class="benefits-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <img src="./images/logo/astronaut.svg" alt="Логотип Астронавт" />
+              <h3 class="benefits-subtitle">Современные технологии</h3>
+              <p class="benefits-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Предоставляемые услуги -->
-      <section class="products">
+      <section class="container products">
         <h2 class="products-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/devices/laptop.jpg"
@@ -122,10 +124,10 @@
         </ul>
       </section>
       <!-- Команда -->
-      <section class="workers">
+      <section class="container workers">
         <h2 class="workers-title">Наша команда</h2>
         <div>
-          <ul>
+          <ul class="list">
             <li>
               <img
                 src="./images/teamworkers/john.jpg"
@@ -134,7 +136,7 @@
               />
               <h3 class="workers-subtitle">John Smith</h3>
               <p class="workers-item">Product Designer</p>
-              <ul>
+              <ul class="list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                 </li>
@@ -151,7 +153,7 @@
               />
               <h3 class="workers-subtitle">Marta Stewart</h3>
               <p class="workers-item">Frontend Developer</p>
-              <ul>
+              <ul class="list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                 </li>
@@ -168,7 +170,7 @@
               />
               <h3 class="workers-subtitle">Robert Jakis</h3>
               <p class="workers-item">Marketing</p>
-              <ul>
+              <ul class="list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                 </li>
@@ -185,7 +187,7 @@
               />
               <h3 class="workers-subtitle">Martin Doe</h3>
               <p class="workers-item">Designer</p>
-              <ul>
+              <ul class="list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                 </li>
@@ -198,9 +200,9 @@
         </div>
       </section>
       <!-- Постоянные клиенты -->
-      <section class="clients">
+      <section class="container clients">
         <h2 class="clients-title">Постоянные клиенты</h2>
-        <ul>
+        <ul class="list">
           <li><a href="" aria-label="Ссылка на YA & CO">YA & CO</a></li>
           <li>
             <a href="" aria-label="Ссылка на COMPANY TAGLINE HERE"
@@ -216,7 +218,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="container footer">
       <a lang="en" href="./index.html" class="footer-logo"
         ><span class="web">Web</span> Studio</a
       >
@@ -228,7 +230,7 @@
           >г. Киев, пр-т Леси Украинки, 26</a
         >
       </address>
-      <ul class="footer contacts">
+      <ul class="footer contacts list">
         <li>
           <a class="contacts-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -242,7 +244,7 @@
       <p class="socials">
         <b class="socials-subtitle">присоединяйтесь</b>
       </p>
-      <ul>
+      <ul class="list">
         <li>
           <a class="socials-link" href="" aria-label="Ссылка на Instagram"
             >Instagram</a

@@ -22,6 +22,8 @@ body {
   color: var(--primary-text-color);
 }
 
+/* утилиты */
+
 ul {
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -48,11 +50,15 @@ a {
   list-style: none;
 }
 
+/* шапка */
+
 .header-flex {
   display: flex;
   height: 80px;
   align-items: center;
 }
+
+/* лого */
 
 .logo {
   color: var(--title-text-color);
@@ -124,7 +130,13 @@ li.item + .item {
 
 /* герой */
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
   font-weight: 900;
@@ -136,6 +148,10 @@ li.item + .item {
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  display: inline-block;
+  align-items: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -146,12 +162,22 @@ li.item + .item {
 
 /* преимущества */
 
+.benefits-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .benefits-item {
+  width: 278px;
+}
+
+.benefits-subtitle {
   color: var(--title-text-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
+  margin: 0;
 }
 
 .benefits-text {
@@ -159,6 +185,7 @@ li.item + .item {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
 }
 
 /* предоставляемые услуги */
