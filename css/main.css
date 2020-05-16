@@ -37,11 +37,11 @@ a {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
@@ -56,6 +56,7 @@ a {
   display: flex;
   height: 80px;
   align-items: center;
+  background-color: yellow;
 }
 
 /* лого */
@@ -132,6 +133,7 @@ li.item + .item {
 
 .hero {
   text-align: center;
+  background-color: tomato;
 }
 
 .hero-title {
@@ -162,13 +164,26 @@ li.item + .item {
 
 /* преимущества */
 
+.benefits-title {
+  display: none;
+}
+
 .benefits-flex {
   display: flex;
   flex-wrap: wrap;
+  padding: 94px 0px;
+  margin: auto;
+  background-color: violet;
 }
 
 .benefits-item {
+  border: 0;
   width: 278px;
+  margin-right: 29px;
+}
+
+.benefits-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .benefits-subtitle {
@@ -177,7 +192,8 @@ li.item + .item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .benefits-text {
