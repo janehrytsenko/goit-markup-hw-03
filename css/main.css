@@ -50,13 +50,16 @@ a {
   list-style: none;
 }
 
+p {
+  margin: 0px;
+}
+
 /* шапка */
 
 .header-flex {
   display: flex;
   height: 80px;
   align-items: center;
-  background-color: yellow;
 }
 
 /* лого */
@@ -133,7 +136,6 @@ li.item + .item {
 
 .hero {
   text-align: center;
-  background-color: tomato;
 }
 
 .hero-title {
@@ -166,14 +168,14 @@ li.item + .item {
 
 .benefits-title {
   display: none;
+  margin: 0;
 }
 
 .benefits-flex {
   display: flex;
   flex-wrap: wrap;
-  padding: 94px 0px;
+  padding-top: 94px;
   margin: auto;
-  background-color: violet;
 }
 
 .benefits-item {
@@ -201,20 +203,41 @@ li.item + .item {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-bottom: 0;
 }
 
 /* предоставляемые услуги */
 
+.products {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .products-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.products-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .products-item {
+  width: 380px;
+  margin-right: 30px;
+}
+
+.products-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.products-text {
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -228,36 +251,68 @@ li.item + .item {
 /* команда */
 
 .workers {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-div {
+.workers-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.workers-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workers-item {
+  width: 278px;
+  margin-right: 29px;
   background-color: var(--primary-white-color);
 }
 
-.workers-title {
-  color: var(--title-text-color);
+.workers-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .workers-subtitle {
+  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.workers-item {
+.workers-text {
+  margin-top: 10px;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* клиенты */
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .clients-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -266,10 +321,33 @@ div {
   letter-spacing: 0.03em;
 }
 
+.clients-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients-item {
+  margin-right: 30px;
+  background-color: var(--primary-white-color);
+}
+
+.clients-item:nth-child(5n) {
+  margin-right: 0px;
+}
+
 /* футер */
 
 footer {
   background-color: #2f303a;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: top;
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .footer-logo {
@@ -282,6 +360,8 @@ footer {
 }
 
 address a {
+  display: inline-block;
+  margin-top: 10px;
   color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
@@ -290,11 +370,16 @@ address a {
 }
 
 .footer.contacts {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.footer-contacts-link {
+  margin-top: 10px;
 }
 
 /* соцсети */
@@ -308,12 +393,21 @@ address a {
   text-transform: uppercase;
 }
 
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
 .copyright {
+  display: inline-block;
+  margin: 20px 0px;
   color: rgba(255, 255, 255, 0.4);
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* СТРАНИЦА portfolio.htm */
