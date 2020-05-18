@@ -54,11 +54,22 @@ p {
   margin: 0px;
 }
 
+img {
+  display: block;
+}
+
 /* шапка */
 
 .header-flex {
   display: flex;
-  height: 80px;
+  align-items: center;
+}
+
+/* навигация  */
+
+.site-nav {
+  display: flex;
+  padding: 32px 0px;
   align-items: center;
 }
 
@@ -78,15 +89,14 @@ p {
   color: var(--accent-color);
 }
 
-/* навигация  */
+/* главная навигация  */
 
-.site-nav {
+.main-nav {
   display: flex;
   margin-left: 86px;
 }
 
-.site-nav .link {
-  display: block;
+.main-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -94,16 +104,16 @@ p {
   letter-spacing: 0.02em;
 }
 
-.site-nav > li:not(:last-child) {
+.main-nav > li:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.main-nav .link:hover,
+.main-nav .link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.main-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -115,7 +125,6 @@ p {
 }
 
 .contacts-link {
-  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -136,13 +145,14 @@ li.item + .item {
 
 .hero {
   text-align: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 46px;
   color: var(--primary-white-color);
-  background: rgba(47, 48, 58, 0.8);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -166,6 +176,11 @@ li.item + .item {
 
 /* преимущества */
 
+.benefits {
+  padding-top: 94px;
+  margin: auto;
+}
+
 .benefits-title {
   display: none;
   margin: 0;
@@ -174,8 +189,6 @@ li.item + .item {
 .benefits-flex {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  margin: auto;
 }
 
 .benefits-item {
@@ -303,6 +316,12 @@ li.item + .item {
   text-align: center;
 }
 
+.workers-socials.list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 /* клиенты */
 
 .clients {
@@ -339,15 +358,12 @@ li.item + .item {
 /* футер */
 
 footer {
+  padding-top: 47px;
   background-color: #2f303a;
 }
 
 .footer-flex {
   display: flex;
-  justify-content: space-around;
-  vertical-align: top;
-  padding-top: 47px;
-  padding-bottom: 47px;
 }
 
 .footer-logo {
@@ -407,7 +423,6 @@ address a {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 /* СТРАНИЦА portfolio.html */
@@ -432,7 +447,9 @@ address a {
 
 .button {
   margin-right: 8px;
+  padding: 0px 22px;
   border-radius: 4px;
+  border: 0;
   color: var(--title-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
